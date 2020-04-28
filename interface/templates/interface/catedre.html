@@ -1,0 +1,367 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+  {% load static %}
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>CEEF Catedre</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+	<meta name="author" content="" />
+
+  <!-- Facebook and Twitter integration -->
+	<meta property="og:title" content=""/>
+	<meta property="og:image" content=""/>
+	<meta property="og:url" content=""/>
+	<meta property="og:site_name" content=""/>
+	<meta property="og:description" content=""/>
+	<meta name="twitter:title" content="" />
+	<meta name="twitter:image" content="" />
+	<meta name="twitter:url" content="" />
+	<meta name="twitter:card" content="" />
+
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,800" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700" rel="stylesheet">
+
+  <!-- Animate.css -->
+  <link rel="stylesheet" type="text/css" href="{% static 'interface/css/animate.css' %}">
+  <!-- Icomoon Icon Fonts-->
+  <link rel="stylesheet" type="text/css" href="{% static 'interface/css/icomoon.css' %}">
+  <!-- Bootstrap  -->
+  <link rel="stylesheet" type="text/css" href="{% static 'interface/css/bootstrap.css' %}">
+
+  <!-- Magnific Popup -->
+  <link rel="stylesheet" type="text/css" href="{% static 'interface/css/magnific-popup.css' %}">
+
+  <!-- Flexslider  -->
+  <link rel="stylesheet" type="text/css" href="{% static 'interface/css/flexslider.css' %}">
+
+  <!-- Owl Carousel -->
+  <link rel="stylesheet" type="text/css" href="{% static 'interface/css/owl.carousel.min.css' %}">
+  <link rel="stylesheet" type="text/css" href="{% static 'interface/css/owl.theme.default.min.css' %}">
+
+  <!-- Flaticons  -->
+  <link rel="stylesheet"  href="{% static 'interface/fonts/flaticon/font/flaticon.css' %}">
+
+  <!-- Theme style  -->
+  <link rel="stylesheet" type="text/css" href="{% static 'interface/css/style.css' %}">
+
+  <!-- Modernizr JS -->
+  <script type="text/javascript" src="{% static "interface/js/modernizr-2.6.2.min.js" %}"></script>
+	<!-- FOR IE9 below -->
+	<!--[if lt IE 9]>
+	<script src="js/respond.min.js"></script>
+	<![endif]-->
+
+	</head>
+	<body>
+
+	<div class="colorlib-loader"></div>
+
+	<div id="page">
+		<nav class="colorlib-nav" role="navigation">
+            <div class="upper-menu">
+                <div class="container">
+                    <div class="row search_menu">
+                        <div class="col-xs-6">
+                            <div class="follow-us">
+                                {% include 'interface/first_menu.html' %}
+                            </div>
+                        </div>
+                        <div class="col-xs-6 col-md-push-2 text-right">
+                            <div class="md-form active-pink active-pink-2 mb-3 mt-0">
+                                <input class="form-control" type="text" placeholder="Search" aria-label="Search" style="
+    height: 30px;
+    background: #1E2022;
+    border: 0px;
+">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="top-menu">
+                <div class="container">
+                    <div class="row menu1_1">
+                        <div class="col-md-2">
+                            <div id="colorlib-logo">
+                              <a href="{% url 'home' %}"><img src="{% static 'interface/images/cfbc_logo2.png' %}" alt="My image" style="width: auto;height: 55px;"></a>
+                            </div>
+                        </div>
+                        <div class="col-md-10 text-right menu-1">
+                            {% include 'interface/second_menu.html' %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+		<aside id="colorlib-hero">
+			<div class="flexslider">
+				<ul class="slides">
+			   	<li style="background-image: url(static/interface/images/img_bg_2.jpg);">
+			   		<div class="overlay"></div>
+			   		<div class="container-fluid">
+			   			<div class="row">
+				   			<div class="col-md-6 col-sm-12 col-md-offset-3 slider-text">
+				   				<div class="slider-text-inner text-center">
+				   					<h1>Catedre</h1>
+				   					<h2><span><a href="{% url 'home' %}">Acasă</a> | <a href="{% url 'education' %}">Educație</a> | Catedre</span></h2>
+				   				</div>
+				   			</div>
+				   		</div>
+			   		</div>
+			   	</li>
+			  	</ul>
+		  	</div>
+		</aside>
+
+           <div id="colorlib-about" class="colorlib-light">
+            <div class="container">
+                <div class="row row-pb-md" style="padding-bottom:  0px !important;">
+                    <div class="col-md-10 col-md-offset-1 text-center animate-box">
+                        <div class="about-wrap">
+                            <div class="heading-2">
+                                <h2>Faurește-ți viitorul cu noi</h2>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam, et id? Similique error illum, voluptatem nulla, eos, ratione temporibus in doloribus corporis praesentium aliquid animi voluptatum delectus omnis tempore minima.</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus corporis nobis aliquid id, fugit sapiente temporibus repellendus placeat necessitatibus blanditiis, exercitationem aliquam ipsum enim. Iure?</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+            <div class="row specialitate">
+                <div class="col-md-6">
+                    <div class="imagine-specialitate" style="background-image: url(static/interface/images/fff.png);">
+
+                    </div>
+                </div>
+
+                <div class="col-md-6 inversareres" >
+                    <div class="col-md-8 animate-box specialitate-text catedrares">
+                       <div class="imagine-catedre" style="background-image: url(static/interface/images/120x120.png)">
+
+                       </div>
+                       <p class="sefulcatedra">Victor Poalelungi</p>
+                       <p class="sefcatedra">Sef Catedra</p>
+                        <h2>Contabilitate și analiză economică</h2>
+                        <p class="maimult"><a href="#" style="color: #429FFD">Mai mult >></a></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row specialitate">
+                <div class="col-md-6 inversare inversare-imagine">
+                    <div class="col-md-8 animate-box specialitate-text catedrares">
+                       <div class="imagine-catedre" style="background-image: url(static/interface/images/120x120.png)">
+
+                       </div>
+                       <p class="sefulcatedra">Victor Poalelungi</p>
+                       <p class="sefcatedra">Sef Catedra</p>
+                        <h2>Contabilitate și analiză economică</h2>
+                        <p  class="maimult"><a href="#" style="color: #429FFD">Mai mult >></a></p>
+                    </div>
+                </div>
+                <div class="col-md-6 inversare">
+                    <div class="imagine-specialitate" style="background-image: url(static/interface/images/fff.png);">
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="row specialitate">
+                <div class="col-md-6">
+                    <div class="imagine-specialitate" style="background-image: url(static/interface/images/fff.png);">
+
+                    </div>
+                </div>
+
+                <div class="col-md-6 inversareres" >
+                    <div class="col-md-8 animate-box specialitate-text catedrares">
+                         <div class="imagine-catedre" style="background-image: url(static/interface/images/120x120.png)">
+
+                       </div>
+                       <p class="sefulcatedra">Victor Poalelungi</p>
+                       <p class="sefcatedra">Sef Catedra</p>
+                        <h2>Contabilitate și analiză economică</h2>
+                        <p class="maimult"><a href="#" style="color: #429FFD">Mai mult >></a></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row specialitate">
+                <div class="col-md-6 inversare inversare-imagine" >
+                    <div class="col-md-8 animate-box specialitate-text catedrares">
+                       <div class="imagine-catedre" style="background-image: url(static/interface/images/120x120.png)">
+
+                       </div>
+                       <p class="sefulcatedra">Victor Poalelungi</p>
+                       <p class="sefcatedra">Sef Catedra</p>
+                        <h2>Contabilitate și analiză economică</h2>
+                        <p class="maimult"><a href="#" style="color: #429FFD">Mai mult >></a></p>
+                    </div>
+                </div>
+                <div class="col-md-6 inversare">
+                    <div class="imagine-specialitate" style="background-image: url(static/interface/images/fff.png);">
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="row specialitate">
+                <div class="col-md-6">
+                    <div class="imagine-specialitate" style="background-image: url(static/interface/images/fff.png);">
+
+                    </div>
+                </div>
+
+                <div class="col-md-6 inversareres" >
+                    <div class="col-md-8 animate-box specialitate-text catedrares">
+                       <div class="imagine-catedre" style="background-image: url(static/interface/images/120x120.png)">
+
+                       </div>
+                       <p class="sefulcatedra">Victor Poalelungi</p>
+                       <p class="sefcatedra">Sef Catedra</p>
+                        <h2>Contabilitate și analiză economică</h2>
+                        <p class="maimult"><a href="#" style="color: #429FFD">Mai mult >></a></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row specialitate">
+                <div class="col-md-6 inversare inversare-imagine" >
+                    <div class="col-md-8 animate-box specialitate-text catedrares">
+                       <div class="imagine-catedre" style="background-image: url(static/interface/images/120x120.png)">
+                       </div>
+                       <p class="sefulcatedra">Victor Poalelungi</p>
+                       <p class="sefcatedra">Sef Catedra</p>
+                        <h2>Contabilitate și analiză economică</h2>
+                        <p class="maimult"><a href="#" style="color: #429FFD">Mai mult >></a></p>
+                    </div>
+                </div>
+                <div class="col-md-6 inversare">
+                    <div class="imagine-specialitate" style="background-image: url(static/interface/images/fff.png);">
+
+                    </div>
+                </div>
+            </div>
+
+             <div class="row specialitate">
+                <div class="col-md-6">
+                    <div class="imagine-specialitate" style="background-image: url(static/interface/images/fff.png);">
+
+                    </div>
+                </div>
+
+                <div class="col-md-6 inversareres" >
+                    <div class="col-md-8 animate-box specialitate-text catedrares">
+                         <div class="imagine-catedre" style="background-image: url(static/interface/images/120x120.png)">
+
+                       </div>
+                       <p class="sefulcatedra">Victor Poalelungi</p>
+                       <p class="sefcatedra">Sef Catedra</p>
+                        <h2>Contabilitate și analiză economică</h2>
+                        <p class="maimult"><a href="#" style="color: #429FFD">Mai mult >></a></p>
+                    </div>
+                </div>
+            </div>
+
+        <div id="colorlib-about" class="colorlib-light">
+            <div class="container">
+                <div class="row row-pb-md" style="padding-bottom:  0px !important;">
+                    <div class="col-md-10 col-md-offset-1 animate-box">
+                        <div class="about-wrap">
+                            <div class="text-center ">
+                                <h2>Intrebari frecvente</h2>
+                            </div>
+                            <div class="fancy-collapse-panel">
+                                <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading" role="tab" id="headingOne">
+                                            <h4 class="panel-title">
+                                                <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Cât timp durează studiile?
+                                                </a>
+                                            </h4>
+                                        </div>
+                                        <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                                            <div class="panel-body">
+                                                <div class="row">
+                                                    <p>Durata studiilor pentru elevii înmatriculaţi în baza studiilor gimnaziale (9clase) este de 4 ani, iar pentru elevii înmatricluați în baza studiilor liceale este de 2 ani.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading" role="tab" id="headingTwo">
+                                            <h4 class="panel-title">
+                                                <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Vom studia și discipline liceale?
+                                                </a>
+                                            </h4>
+                                        </div>
+                                        <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                                            <div class="panel-body">
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae explicabo qui beatae, molestiae fugit a quia ab cum ullam odit!
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading" role="tab" id="headingThree">
+                                            <h4 class="panel-title">
+                                                <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                                    Ce studiem în anul IV?
+                                                </a>
+                                            </h4>
+                                        </div>
+                                        <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                                            <div class="panel-body">
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad doloremque, laborum consequatur nemo, non eum! Eveniet optio provident ad iure animi facilis eligendi reprehenderit deleniti, quo eaque blanditiis laudantium id amet quod, similique sapiente. Blanditiis ipsam dolores asperiores voluptatem molestias eveniet, impedit ducimus, molestiae repellat, quia voluptatum pariatur omnis mollitia!</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+		<footer id="colorlib-footer">
+      {% include 'interface/footer.html' %}
+    </footer>
+	</div>
+
+	<div class="gototop js-top">
+		<a href="#" class="js-gotop"><i class="icon-arrow-up2"></i></a>
+	</div>
+
+	<!-- jQuery -->
+  <script type="text/javascript" src="{% static "interface/js/jquery.min.js" %}"></script>
+  <!-- jQuery Easing -->
+  <script type="text/javascript" src="{% static "interface/js/jquery.easing.1.3.js" %}"></script>
+  <!-- Bootstrap -->
+  <script type="text/javascript" src="{% static "interface/js/bootstrap.min.js" %}"></script>
+  <!-- Waypoints -->
+  <script type="text/javascript" src="{% static "interface/js/jquery.waypoints.min.js" %}"></script>
+  <!-- Stellar Parallax -->
+  <script type="text/javascript" src="{% static "interface/js/jquery.stellar.min.js" %}"></script>
+  <!-- Flexslider -->
+  <script type="text/javascript" src="{% static "interface/js/jquery.flexslider-min.js" %}"></script>
+  <!-- Owl carousel -->
+  <script type="text/javascript" src="{% static "interface/js/owl.carousel.min.js" %}"></script>
+  <!-- Magnific Popup -->
+  <script type="text/javascript" src="{% static "interface/js/jquery.magnific-popup.min.js" %}"></script>
+  <script type="text/javascript" src="{% static "interface/js/magnific-popup-options.js" %}"></script>
+  <!-- Counters -->
+  <script type="text/javascript" src="{% static "interface/js/jquery.countTo.js" %}"></script>
+  <!-- Main -->
+  <script type="text/javascript" src="{% static "interface/js/main.js" %}"></script>
+
+	</body>
+</html>
+

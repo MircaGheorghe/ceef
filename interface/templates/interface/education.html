@@ -1,0 +1,602 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  {% load static %}
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>CEEF Educatie</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
+  <meta name="author" content="" />
+
+  <!-- Facebook and Twitter integration -->
+  <meta property="og:title" content="" />
+  <meta property="og:image" content="" />
+  <meta property="og:url" content="" />
+  <meta property="og:site_name" content="" />
+  <meta property="og:description" content="" />
+  <meta name="twitter:title" content="" />
+  <meta name="twitter:image" content="" />
+  <meta name="twitter:url" content="" />
+  <meta name="twitter:card" content="" />
+
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,800" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700" rel="stylesheet">
+
+  <!-- Animate.css -->
+  <link rel="stylesheet" type="text/css" href="{% static 'interface/css/animate.css' %}">
+  <!-- Icomoon Icon Fonts-->
+  <link rel="stylesheet" type="text/css" href="{% static 'interface/css/icomoon.css' %}">
+  <!-- Bootstrap  -->
+  <link rel="stylesheet" type="text/css" href="{% static 'interface/css/bootstrap.css' %}">
+
+  <!-- Magnific Popup -->
+  <link rel="stylesheet" type="text/css" href="{% static 'interface/css/magnific-popup.css' %}">
+
+  <!-- Flexslider  -->
+  <link rel="stylesheet" type="text/css" href="{% static 'interface/css/flexslider.css' %}">
+
+  <!-- Owl Carousel -->
+  <link rel="stylesheet" type="text/css" href="{% static 'interface/css/owl.carousel.min.css' %}">
+  <link rel="stylesheet" type="text/css" href="{% static 'interface/css/owl.theme.default.min.css' %}">
+
+  <!-- Flaticons  -->
+  <link rel="stylesheet"  href="{% static 'interface/fonts/flaticon/font/flaticon.css' %}">
+
+  <!-- Theme style  -->
+  <link rel="stylesheet" type="text/css" href="{% static 'interface/css/style.css' %}">
+
+  <!-- Modernizr JS -->
+  <script type="text/javascript" src="{% static "interface/js/modernizr-2.6.2.min.js" %}"></script>
+    <!-- FOR IE9 below -->
+    <!--[if lt IE 9]>
+	<script src="js/respond.min.js"></script>
+	<![endif]-->
+
+</head>
+
+<body>
+
+    <div class="colorlib-loader"></div>
+
+    <div id="page">
+        <nav class="colorlib-nav" role="navigation">
+            <div class="upper-menu">
+                <div class="container">
+                    <div class="row search_menu">
+                        <div class="col-xs-6">
+                            <div class="follow-us">
+                                {% include 'interface/first_menu.html' %}
+                            </div>
+                        </div>
+                        <div class="col-xs-6 col-md-push-2 text-right">
+                            <div class="md-form active-pink active-pink-2 mb-3 mt-0">
+                                <input class="form-control" type="text" placeholder="Search" aria-label="Search" style="
+    height: 30px;
+    background: #1E2022;
+    border: 0px;
+">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="top-menu">
+                <div class="container">
+                    <div class="row menu1_1">
+                        <div class="col-md-2">
+                            <div id="colorlib-logo">
+                              <a href="{% url 'home' %}"><img src="{% static "interface/images/cfbc_logo2.png" %}" alt="My image" style="width: auto;height: 55px;"></a>
+                            </div>
+                        </div>
+                        <div class="col-md-10 text-right menu-1">
+                            {% include 'interface/second_menu.html' %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <aside id="colorlib-hero">
+            <div class="flexslider">
+                <ul class="slides">
+                    <li style="background-image: url(static/interface/images/img_bg_2.jpg);">
+                        <div class="overlay"></div>
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-md-6 col-sm-12 col-md-offset-3 slider-text">
+                                    <div class="slider-text-inner text-center">
+                                        <h1>Educație</h1>
+                                        <h2><span><a href="{% url 'home' %}">Acasă</a> | Educație</span></h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </aside>
+
+        <div class="colorlib-classes colorlib-white">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2 text-center colorlib-heading animate-box">
+                        <h2>Specialități</h2>
+                        <p>CEEF oferă instruire la următoarele programe de formare:</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 animate-box">
+                        <div class="classes">
+                            <div class="classes-img" style="background-image: url(static/interface/images/fff.png);">
+                            </div>
+                            <div class="desc">
+                                <h3><a href="#">Administrarea Aplicatiilor Web</a></h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam, voluptate!</p>
+                                <p><a href="#" class="btn-learn">Learn More <i class="icon-arrow-right3"></i></a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 animate-box">
+                        <div class="classes">
+                            <div class="classes-img" style="background-image: url(static/interface/images/fff.png);">
+                            </div>
+                            <div class="desc">
+                                <h3><a href="#">Finante si asigurari</a></h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic, aspernatur.</p>
+                                <p><a href="#" class="btn-learn">Learn More <i class="icon-arrow-right3"></i></a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 animate-box">
+                        <div class="classes">
+                            <div class="classes-img" style="background-image: url(static/interface/images/fff.png);">
+                            </div>
+                            <div class="desc">
+                                <h3><a href="#">Contabilitate</a></h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed, alias.</p>
+                                <p><a href="#" class="btn-learn">Learn More <i class="icon-arrow-right3"></i></a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 animate-box">
+                        <div class="classes">
+                            <div class="classes-img" style="background-image: url(static/interface/images/fff.png);">
+                            </div>
+                            <div class="desc">
+                                <h3><a href="#">Impozite si percepere fiscala</a></h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum, in.</p>
+                                <p><a href="#" class="btn-learn">Learn More <i class="icon-arrow-right3"></i></a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 animate-box">
+                        <div class="classes">
+                            <div class="classes-img" style="background-image: url(static/interface/images/fff.png);">
+                            </div>
+                            <div class="desc">
+                                <h3><a href="#">Finante si banci</a></h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, voluptas.</p>
+                                <p><a href="#" class="btn-learn">Learn More <i class="icon-arrow-right3"></i></a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 animate-box">
+                        <div class="classes">
+                            <div class="classes-img" style="background-image: url(static/interface/images/fff.png);">
+                            </div>
+                            <div class="desc">
+                                <h3><a href="#">Programarea si analiza produselor de program</a></h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus, error.</p>
+                                <p><a href="#" class="btn-learn">Learn More <i class="icon-arrow-right3"></i></a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 animate-box">
+                        <div class="classes">
+                            <div class="classes-img" style="background-image: url(static/interface/images/fff.png);">
+                            </div>
+                            <div class="desc">
+                                <h3><a href="#">Planificarea si administrarea afacerilor</a></h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas, dicta!</p>
+                                <p><a href="#" class="btn-learn">Learn More <i class="icon-arrow-right3"></i></a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="colorlib-about" class="colorlib-light-grey">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2 text-center colorlib-heading animate-box">
+                        <h2>Catedre</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam, harum.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 animate-box">
+
+                        <a href="#">
+                            <div class="row">
+                                <div class=" kebab" style="background-image: url(static/interface/images/0000.png);">
+                                </div>
+                                <div class="textkebab1">Matematica si Fizica<br>
+                                    <span>Nr. de profesori: xx</span>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a href="3">
+                            <div class="row">
+                                <div class=" kebab" style="background-image: url(static/interface/images/0001.png);">
+                                </div>
+                                <div class="textkebab">Informatica<br>
+                                    <span>Nr. de profesori: xx</span>
+                                </div>
+                            </div>
+                        </a>
+
+                    </div>
+
+                    <a href="#">
+                        <div class="col-md-4 centru animate-box">
+
+                            <div class="kebabcentru" style="background-image: url(static/interface/images/0001.png);">
+
+                            </div>
+                            <div class="textkebab">Finante<br>
+                                <span>Nr. de profesori: xx</span>
+                            </div>
+
+                        </div>
+                    </a>
+
+                    <div class="col-md-4 animate-box">
+                        <a href="#">
+                            <div class="row">
+                                <div class="kebab" style="background-image: url(static/interface/images/0001.png);">
+
+                                </div>
+                                <div class="textkebab1">Administrarea afacerilor<br>
+                                    <span>Nr. de profesori: xx</span>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a href="#">
+                            <div class="row">
+                                <div class="kebab" style="background-image: url(static/interface/images/0001.png);">
+
+                                </div>
+                                <div class="textkebab">Limba si Comunicare<br>
+                                    <span>Nr. de profesori: xx</span>
+                                </div>
+                            </div>
+                        </a>
+
+                    </div>
+                </div>
+                <div class="row">
+                    <a href="#">
+                        <div class="col-md-6 jos1 animate-box">
+                            <div class="kebabjos1" style="background-image: url(static/interface/images/000.png);">
+
+                            </div>
+                            <div class="textkebab">Contabilitate si analiza economica<br>
+                                <span>Nr. de profesori: xx</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="col-md-6 jos2 animate-box" style="padding-right: 0px;">
+                            <div class="kebabjos2" style="background-image: url(static/interface/images/000.png);">
+
+                            </div>
+                            <div class="textkebab">Stiinte Socio-umane<br>
+                                <span>Nr. de profesori: xx</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div id="colorlib-counter" class="colorlib-counters" style="background-image: url(static/interface/images/fff2.png);" data-stellar-background-ratio="0.5">
+            <div class="overlay"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-10 col-md-offset-1">
+                        <div class="col-md-6 animate-box text-center">
+                            <div class="counter-entry">
+                                <span class="icon"><i class="flaticon-book"></i></span>
+                                <div class="desc">
+                                    <span class="colorlib-counter js-counter" data-from="0" data-to="45" data-speed="5000" data-refresh-interval="50"></span>
+                                    <span class="colorlib-counter-label">Proiecte</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 animate-box text-center">
+                            <div class="counter-entry">
+                                <span class="icon"><i class="flaticon-earth-globe"></i></span>
+                                <div class="desc">
+                                    <span class="colorlib-counter js-counter" data-from="0" data-to="20" data-speed="5000" data-refresh-interval="50"></span>
+                                    <span class="colorlib-counter-label">Cercuri</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="colorlib-event colorlib-light-grey" style="
+    padding-bottom: 0em;
+">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2 text-center colorlib-heading animate-box">
+                        <h2>Proiectele Noastre</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae labore qui totam maxime veritatis ducimus mollitia a necessitatibus optio vero.</p>
+                    </div>
+                </div>
+                <div class="event-flex row-pb-sm">
+                    <div class="row">
+                        <div class="col-md-6" style="
+    padding-left: 0px;
+    padding-right: 0px;
+">
+                            <div class="col-md-12 animate-box">
+                                <div class="event-entry">
+                                    <div class="desc">
+                                        <p class="meta"><span class="day" style="font-size: 28px;">2000</span><span class="month">Ian</span></p>
+
+                                        <p class="meta" style="top: 55px;">
+                                            <span class="day" style="font-size: 28px;">2009</span>
+                                            <span class="month">Ian</span>
+                                        </p>
+
+                                        <p class="organizer"><span>Ceva avolo:</span> <span>Ceva acolo</span></p>
+                                        <h2><a href="event.html">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, ullam.</a></h2>
+                                    </div>
+                                    <div class="location">
+                                        <span class="icon"><i class="icon-map"></i></span>
+                                        <p>Lorem ipsum dolor sit amet, consectetur.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12 animate-box">
+                                <div class="event-entry">
+                                    <div class="desc">
+                                        <p class="meta"><span class="day" style="font-size: 28px;">1905</span><span class="month">Ian</span></p>
+                                        <p class="meta" style="top: 55px;">
+                                            <span class="day" style="font-size: 28px;">2009</span>
+                                            <span class="month">Ian</span>
+                                        </p>
+
+                                        <p class="organizer"><span>Ceva avolo:</span> <span>Ceva acolo</span></p>
+                                        <h2><a href="event.html">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis, dolore.</a></h2>
+                                    </div>
+                                    <div class="location">
+                                        <span class="icon"><i class="icon-map"></i></span>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12 animate-box">
+                                <div class="event-entry">
+                                    <div class="desc">
+                                        <p class="meta"><span class="day" style="font-size: 28px;">xx</span><span class="month">Ian</span></p>
+                                        <p class="meta" style="top: 55px;">
+                                            <span class="day" style="font-size: 28px;">2009</span>
+                                            <span class="month">Ian</span>
+                                        </p>
+                                        <p class="organizer"><span>Ceva avolo:</span> <span>Ceva acolo</span></p>
+                                        <h2><a href="event.html">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, rerum.</a></h2>
+                                    </div>
+                                    <div class="location">
+                                        <span class="icon"><i class="icon-map"></i></span>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6" style="
+    padding-left: 0px;
+    padding-right: 0px;
+">
+                            <div class="col-md-12 animate-box">
+                                <div class="event-entry">
+                                    <div class="desc">
+                                        <p class="meta"><span class="day" style="font-size: 28px;">xx</span><span class="month">Ian</span></p>
+                                        <p class="meta" style="top: 55px;">
+                                            <span class="day" style="font-size: 28px;">2009</span>
+                                            <span class="month">Ian</span>
+                                        </p>
+                                        <p class="organizer"><span>Ceva avolo:</span> <span>Ceva acolo</span></p>
+                                        <h2><a href="event.html">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, ullam.</a></h2>
+                                    </div>
+                                    <div class="location">
+                                        <span class="icon"><i class="icon-map"></i></span>
+                                        <p>Lorem ipsum dolor sit amet, consectetur.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12 animate-box">
+                                <div class="event-entry">
+                                    <div class="desc">
+                                        <p class="meta"><span class="day" style="font-size: 28px;">xx</span><span class="month">Ian</span></p>
+                                        <p class="meta" style="top: 55px;">
+                                            <span class="day" style="font-size: 28px;">2009</span>
+                                            <span class="month">Ian</span>
+                                        </p>
+                                        <p class="organizer"><span>Ceva avolo:</span> <span>Ceva acolo</span></p>
+                                        <h2><a href="event.html">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis, dolore.</a></h2>
+                                    </div>
+                                    <div class="location">
+                                        <span class="icon"><i class="icon-map"></i></span>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12 animate-box">
+                                <div class="event-entry">
+                                    <div class="desc">
+                                        <p class="meta"><span class="day" style="font-size: 28px;">xx</span><span class="month">Ian</span></p>
+                                        <p class="meta" style="top: 55px;">
+                                            <span class="day" style="font-size: 28px;">2009</span>
+                                            <span class="month">Ian</span>
+                                        </p>
+                                        <p class="organizer"><span>Ceva avolo:</span> <span>Ceva acolo</span></p>
+                                        <h2><a href="event.html">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, rerum.</a></h2>
+                                    </div>
+                                    <div class="location">
+                                        <span class="icon"><i class="icon-map"></i></span>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-8 col-md-offset-2 text-center colorlib-heading animate-box" style="margin-top: -50px;">
+                    <a href="#">
+                        <h2>Mai mult...</h2>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div id="colorlib-about" class="colorlib-light">
+            <div class="container">
+
+                <div class="col-md-8 col-md-offset-2 text-center colorlib-heading animate-box">
+                    <h2>Cercurile noastre</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae labore qui totam maxime veritatis ducimus mollitia a necessitatibus optio vero.</p>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-4 animate-box">
+
+                        <a href="#">
+                            <div class="row">
+                                <div class=" kebab" style="background-image: url(static/interface/images/0000.png);">
+                                </div>
+                                <div class="textkebab1">Cerc 1<br>
+                                    <span>Nr. de elevi participanti: xx</span>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a href="#">
+                            <div class="row">
+                                <div class=" kebab" style="background-image: url(static/interface/images/0001.png);">
+                                </div>
+                                <div class="textkebab">Cerc 2<br>
+                                    <span>Nr. de elevi participanti: xx</span>
+                                </div>
+                            </div>
+                        </a>
+
+                    </div>
+
+                    <div class="col-md-4 petuh animate-box">
+                        <a href="#">
+                            <div class="row">
+                                <div class="kebab" style="background-image: url(static/interface/images/0001.png);">
+
+                                </div>
+                                <div class="textkebab1">Cerc 3<br>
+                                    <span>Nr. de elevi participanti: xx</span>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a href="#">
+                            <div class="row">
+                                <div class="kebab" style="background-image: url(static/interface/images/0001.png);">
+
+                                </div>
+                                <div class="textkebab">Cerc 4<br>
+                                    <span>Nr. de elevi participanti: xx</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <a href="#">
+                        <div class="col-md-4 centru animate-box">
+                            <div class="kebabcentru" style="background-image: url(static/interface/images/0001.png);">
+
+                            </div>
+                            <div class="textkebab">Cerc 5<br>
+                                <span>Nr. de elevi participanti: xx</span>
+                            </div>
+
+                        </div>
+                    </a>
+
+                </div>
+            </div>
+        </div>
+
+        <div id="colorlib-about" class="colorlib-light-grey">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 animate-box">
+                        <img class="classes-img-about" src="{% static 'interface/images/firma.png' %}" alt="" style="
+    border-radius: 10px;
+    width: 80%;
+    left: 10%;
+">
+                        <h3 class="" style="margin: 0px;">KULTURKONTACT, Austria</h3>
+                        <p class="chipiu">Lansat in 2006</p>
+                        <p class="pozitia1 linie"> " Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus, cupiditate modi aliquam rerum est, provident fuga quaerat ipsum et ipsa! "</p>
+                    </div>
+                    <div class="col-md-8 animate-box">
+                        <h2>Firma de exercitiu</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex commodi dolorem temporibus assumenda laborum praesentium unde pariatur? Placeat provident, rem quidem dolor, suscipit ratione voluptatem aperiam dicta deserunt minima beatae quam ipsum unde hic qui. Voluptatem aperiam eligendi vel, sequi sapiente minus velit nam soluta blanditiis quos omnis assumenda. Officiis.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex commodi dolorem temporibus assumenda laborum praesentium unde pariatur? Placeat provident, rem quidem dolor, suscipit ratione voluptatem aperiam dicta deserunt minima beatae quam ipsum unde hic qui. Voluptatem aperiam eligendi vel, sequi sapiente minus velit nam soluta blanditiis quos omnis assumenda. Officiis.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer id="colorlib-footer">
+            {% include 'interface/footer.html' %}
+        </footer>
+    </div>
+
+    <div class="gototop js-top">
+        <a href="#" class="js-gotop"><i class="icon-arrow-up2"></i></a>
+    </div>
+
+    <!-- jQuery -->
+    <script type="text/javascript" src="{% static "interface/js/jquery.min.js" %}"></script>
+    <!-- jQuery Easing -->
+    <script type="text/javascript" src="{% static "interface/js/jquery.easing.1.3.js" %}"></script>
+    <!-- Bootstrap -->
+    <script type="text/javascript" src="{% static "interface/js/bootstrap.min.js" %}"></script>
+    <!-- Waypoints -->
+    <script type="text/javascript" src="{% static "interface/js/jquery.waypoints.min.js" %}"></script>
+    <!-- Stellar Parallax -->
+    <script type="text/javascript" src="{% static "interface/js/jquery.stellar.min.js" %}"></script>
+    <!-- Flexslider -->
+    <script type="text/javascript" src="{% static "interface/js/jquery.flexslider-min.js" %}"></script>
+    <!-- Owl carousel -->
+    <script type="text/javascript" src="{% static "interface/js/owl.carousel.min.js" %}"></script>
+    <!-- Magnific Popup -->
+    <script type="text/javascript" src="{% static "interface/js/jquery.magnific-popup.min.js" %}"></script>
+    <script type="text/javascript" src="{% static "interface/js/magnific-popup-options.js" %}"></script>
+    <!-- Counters -->
+    <script type="text/javascript" src="{% static "interface/js/jquery.countTo.js" %}"></script>
+    <!-- Main -->
+    <script type="text/javascript" src="{% static "interface/js/main.js" %}"></script>
+
+</body>
+
+</html>

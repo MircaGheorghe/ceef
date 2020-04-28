@@ -1,0 +1,332 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+  {% load static %}
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>CEEF#3 Specialitati</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+	<meta name="author" content="" />
+
+  <!-- Facebook and Twitter integration -->
+	<meta property="og:title" content=""/>
+	<meta property="og:image" content=""/>
+	<meta property="og:url" content=""/>
+	<meta property="og:site_name" content=""/>
+	<meta property="og:description" content=""/>
+	<meta name="twitter:title" content="" />
+	<meta name="twitter:image" content="" />
+	<meta name="twitter:url" content="" />
+	<meta name="twitter:card" content="" />
+
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,800" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700" rel="stylesheet">
+
+  <!-- Animate.css -->
+  <link rel="stylesheet" type="text/css" href="{% static 'interface/css/animate.css' %}">
+  <!-- Icomoon Icon Fonts-->
+  <link rel="stylesheet" type="text/css" href="{% static 'interface/css/icomoon.css' %}">
+  <!-- Bootstrap  -->
+  <link rel="stylesheet" type="text/css" href="{% static 'interface/css/bootstrap.css' %}">
+
+  <!-- Magnific Popup -->
+  <link rel="stylesheet" type="text/css" href="{% static 'interface/css/magnific-popup.css' %}">
+
+  <!-- Flexslider  -->
+  <link rel="stylesheet" type="text/css" href="{% static 'interface/css/flexslider.css' %}">
+
+  <!-- Owl Carousel -->
+  <link rel="stylesheet" type="text/css" href="{% static 'interface/css/owl.carousel.min.css' %}">
+  <link rel="stylesheet" type="text/css" href="{% static 'interface/css/owl.theme.default.min.css' %}">
+
+  <!-- Flaticons  -->
+  <link rel="stylesheet"  href="{% static 'interface/fonts/flaticon/font/flaticon.css' %}">
+
+  <!-- Theme style  -->
+  <link rel="stylesheet" type="text/css" href="{% static 'interface/css/style.css' %}">
+
+  <!-- Modernizr JS -->
+  <script type="text/javascript" src="{% static "interface/js/modernizr-2.6.2.min.js" %}"></script>
+	<!-- FOR IE9 below -->
+	<!--[if lt IE 9]>
+	<script src="js/respond.min.js"></script>
+	<![endif]-->
+
+	</head>
+	<body>
+
+	<div class="colorlib-loader"></div>
+
+	<div id="page">
+		<nav class="colorlib-nav" role="navigation">
+            <div class="upper-menu">
+                <div class="container">
+                    <div class="row search_menu">
+                        <div class="col-xs-6">
+                            <div class="follow-us">
+                                {% include 'interface/first_menu.html' %}
+                            </div>
+                        </div>
+                        <div class="col-xs-6 col-md-push-2 text-right">
+                            <div class="md-form active-pink active-pink-2 mb-3 mt-0">
+                                <input class="form-control" type="text" placeholder="Search" aria-label="Search" style="
+    height: 30px;
+    background: #1E2022;
+    border: 0px;
+">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="top-menu">
+                <div class="container">
+                    <div class="row menu1_1">
+                        <div class="col-md-2">
+                            <div id="colorlib-logo">
+                              <a href="{% url 'home' %}"><img src="{% static 'interface/images/cfbc_logo2.png' %}" alt="My image" style="width: auto;height: 55px;"></a>
+                            </div>
+                        </div>
+                        <div class="col-md-10 text-right menu-1">
+                            {% include 'interface/second_menu.html' %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+		<aside id="colorlib-hero">
+			<div class="flexslider">
+				<ul class="slides">
+			   	<li style="background-image: url(static/interface/images/img_bg_2.jpg);">
+			   		<div class="overlay"></div>
+			   		<div class="container-fluid">
+			   			<div class="row">
+				   			<div class="col-md-6 col-sm-12 col-md-offset-3 slider-text">
+				   				<div class="slider-text-inner text-center">
+				   					<h1>Specialități</h1>
+				   					<h2><span><a href="{% url 'home' %}">Acasă</a> | <a href="{% url 'education' %}">Educație</a> | Specialități</span></h2>
+				   				</div>
+				   			</div>
+				   		</div>
+			   		</div>
+			   	</li>
+			  	</ul>
+		  	</div>
+		</aside>
+
+           <div id="colorlib-about" class="colorlib-light">
+            <div class="container">
+                <div class="row row-pb-md" style="padding-bottom:  0px !important;">
+                    <div class="col-md-10 col-md-offset-1 text-center animate-box">
+                        <div class="about-wrap">
+                            <div class="heading-2">
+                                <h2>Faurește-ți viitorul cu noi</h2>
+                            </div>
+                            <p>CENTRUL DE EXCELENȚĂ ÎN ECONOMIE ȘI FINANȚE(CEEF)/Colegiul Financiar-Bancar din Chişinău este o instituţie de învăţământ profesional tehnic postsecundar a cărei misiune este pregătirea specialiştilor cu caracter aplicativ pentru economia naţională a RM. CEEF oferă instruire la următoarele programe de formare:</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus corporis nobis aliquid id, fugit sapiente temporibus repellendus placeat necessitatibus blanditiis, exercitationem aliquam ipsum enim. Iure?</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+            <div class="row specialitate">
+                <div class="col-md-6">
+                    <div class="imagine-specialitate" style="background-image: url(static/interface/images/fff.png);">
+
+                    </div>
+                </div>
+
+                <div class="col-md-6" >
+                    <div class="col-md-8 animate-box specialitate-text">
+                        <h2>Impozite și percepere fiscală</h2>
+                        <p>Absolvenții specialității Impozite și percepere fiscală obțin calificarea contabil și desfășoară activități la entități de stat sau private în compartimentul financiar-contabil, în calitate de contabil, inspector fiscal, inspector  organizarea încasărilor și transportarea valorilor, specialist în problemele perceperii fiscale, inspector-revizor, șef adjunct secție sau departament etc.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row specialitate">
+                <div class="col-md-6 inversare">
+                    <div class="col-md-8 animate-box specialitate-text">
+                        <h2>Contabilitate</h2>
+                        <p>Absolvenții specialității Contabilitate obțin calificarea contabil și desfășoară activități la entități de stat sau private în compartimentul financiar-contabil, în calitate de contabil, contabil-coordonator, șef adjunct secție sau departament.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 inversare">
+                    <div class="imagine-specialitate" style="background-image: url(static/interface/images/fff.png);">
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="row specialitate">
+                <div class="col-md-6">
+                    <div class="imagine-specialitate" style="background-image: url(static/interface/images/fff.png);">
+
+                    </div>
+                </div>
+
+                <div class="col-md-6" >
+                    <div class="col-md-8 animate-box specialitate-text">
+                        <h2>Finanțe și asigurări</h2>
+                        <p>Absolvenții specialității Finanțe și asigurări obțin calificarea broker în asigurări și desfășoară activități în cadrul societăților de asigurări și altor instituții financiare în calitate de broker în asigurări, agent de asigurare, agent de achiziții (broker mărfuri), funcționar economic, agent bursă, administrator financiar, agent de vânzări directe (produse financiar-bancare) etc. </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row specialitate">
+                <div class="col-md-6 inversare" >
+                    <div class="col-md-8 animate-box specialitate-text">
+                        <h2>Finanțe și bănci</h2>
+                        <p>Absolvenții specialității Finanțe și bănci obțin calificarea ofițer operațiuni  financiar-bancare  și desfășoară  activități  în centrala băncii, în sucursale/agenții  sau în instituții financiare nebancare.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 inversare">
+                    <div class="imagine-specialitate" style="background-image: url(static/interface/images/fff.png);">
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="row specialitate">
+                <div class="col-md-6">
+                    <div class="imagine-specialitate" style="background-image: url(static/interface/images/fff.png);">
+
+                    </div>
+                </div>
+
+                <div class="col-md-6" >
+                    <div class="col-md-8 animate-box specialitate-text">
+                        <h2>Planificarea și administrarea afacerilor</h2>
+                        <p>Absolvenții specialității Planificarea și administrarea afacerilor obțin calificarea tehnician planificare și desfășoară activități la entități de stat sau private în calitate de administrator al afacerilor mici și mijlocii, asistent manager, specialiști pentru activități ce țin de planificarea, colectarea, procesarea și prezentarea datelor cu caracter economic etc., sau poate iniția și gestiona propria afacere în cadrul Sectorului Întreprinderilor Mici și Mijlocii (ÎMM).</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row specialitate">
+                <div class="col-md-6 inversare" >
+                    <div class="col-md-8 animate-box specialitate-text">
+                        <h2>Administrarea aplicațiilor web</h2>
+                        <p>Absolvenții specialității Administrarea aplicațiilor web obțin calificarea tehnician de site-uri web și desfășoară activități la entități economice în cadrul echipelor de dezvoltare și mentenanță a site-urilor și aplicațiilor Web. </p>
+                    </div>
+                </div>
+                <div class="col-md-6 inversare">
+                    <div class="imagine-specialitate" style="background-image: url(static/interface/images/fff.png);">
+
+                    </div>
+                </div>
+            </div>
+
+             <div class="row specialitate">
+                <div class="col-md-6">
+                    <div class="imagine-specialitate" style="background-image: url(static/interface/images/fff.png);">
+
+                    </div>
+                </div>
+
+                <div class="col-md-6" >
+                    <div class="col-md-8 animate-box specialitate-text">
+                        <h2>Programarea și analiza produselor program</h2>
+                        <p>Absolvenții specialității Programarea și analiza produselor program obțin calificarea asistent programator și participă la elaborarea algoritmului programului, scrie/ codifică programe sau module de program, testează și implementează module de program/ programe/ aplicații, monitorizează folosirea corectă a programelor/ aplicațiilor de către beneficiari /utilizatori.</p>
+                    </div>
+                </div>
+            </div>
+
+        <div id="colorlib-about" class="colorlib-light">
+            <div class="container">
+                <div class="row row-pb-md" style="padding-bottom:  0px !important;">
+                    <div class="col-md-10 col-md-offset-1 animate-box">
+                        <div class="about-wrap">
+                            <div class="text-center ">
+                                <h2>Intrebari frecvente</h2>
+                            </div>
+                            <div class="fancy-collapse-panel">
+                                <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading" role="tab" id="headingOne">
+                                            <h4 class="panel-title">
+                                                <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Cât timp durează studiile?
+                                                </a>
+                                            </h4>
+                                        </div>
+                                        <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                                            <div class="panel-body">
+                                                <div class="row">
+                                                    <p>Durata studiilor pentru elevii înmatriculaţi în baza studiilor gimnaziale (9clase) este de 4 ani, iar pentru elevii înmatricluați în baza studiilor liceale este de 2 ani.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading" role="tab" id="headingTwo">
+                                            <h4 class="panel-title">
+                                                <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Vom studia și discipline liceale?
+                                                </a>
+                                            </h4>
+                                        </div>
+                                        <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                                            <div class="panel-body">
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae explicabo qui beatae, molestiae fugit a quia ab cum ullam odit!
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading" role="tab" id="headingThree">
+                                            <h4 class="panel-title">
+                                                <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                                    Ce studiem în anul IV?
+                                                </a>
+                                            </h4>
+                                        </div>
+                                        <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                                            <div class="panel-body">
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad doloremque, laborum consequatur nemo, non eum! Eveniet optio provident ad iure animi facilis eligendi reprehenderit deleniti, quo eaque blanditiis laudantium id amet quod, similique sapiente. Blanditiis ipsam dolores asperiores voluptatem molestias eveniet, impedit ducimus, molestiae repellat, quia voluptatum pariatur omnis mollitia!</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+		<footer id="colorlib-footer">
+        {% include 'interface/footer.html' %}
+    </footer>
+	</div>
+
+	<div class="gototop js-top">
+		<a href="#" class="js-gotop"><i class="icon-arrow-up2"></i></a>
+	</div>
+
+	<!-- jQuery -->
+  <script type="text/javascript" src="{% static "interface/js/jquery.min.js" %}"></script>
+  <!-- jQuery Easing -->
+  <script type="text/javascript" src="{% static "interface/js/jquery.easing.1.3.js" %}"></script>
+  <!-- Bootstrap -->
+  <script type="text/javascript" src="{% static "interface/js/bootstrap.min.js" %}"></script>
+  <!-- Waypoints -->
+  <script type="text/javascript" src="{% static "interface/js/jquery.waypoints.min.js" %}"></script>
+  <!-- Stellar Parallax -->
+  <script type="text/javascript" src="{% static "interface/js/jquery.stellar.min.js" %}"></script>
+  <!-- Flexslider -->
+  <script type="text/javascript" src="{% static "interface/js/jquery.flexslider-min.js" %}"></script>
+  <!-- Owl carousel -->
+  <script type="text/javascript" src="{% static "interface/js/owl.carousel.min.js" %}"></script>
+  <!-- Magnific Popup -->
+  <script type="text/javascript" src="{% static "interface/js/jquery.magnific-popup.min.js" %}"></script>
+  <script type="text/javascript" src="{% static "interface/js/magnific-popup-options.js" %}"></script>
+  <!-- Counters -->
+  <script type="text/javascript" src="{% static "interface/js/jquery.countTo.js" %}"></script>
+  <!-- Main -->
+  <script type="text/javascript" src="{% static "interface/js/main.js" %}"></script>
+
+	</body>
+</html>
+
