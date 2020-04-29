@@ -5,10 +5,13 @@
         <a href='{{men1.item_title}}'>{{ men1.item_title|to_space }}</a>
         <ul class="dropdown" style="display: none;width: 200px;">
             {% for men2 in menu2 %}
-            {% if men1.item_title|cut:" " == men2.top_lvl|cut:" " %}
-            <li><a href="{{men2.item_title}}">{{men2.item_title|to_space}}</a></li>
-            {% else %}
-            {% endif %}
+              {% if men1.item_title|cut:" " == men2.top_lvl|cut:" " %}
+                  {% if men2.item_title == 'Top_grupe_academice' %}
+                    <li><a href="{% url 'elevi' %}#top_grupe">{{men2.item_title|to_space}}</a></li>
+                  {% else %}
+                    <li><a href="{{men2.item_title}}">{{men2.item_title|to_space}}</a></li>
+                  {% endif %}
+              {% endif %}
             {% endfor %}
         </ul>
   {% endfor %}

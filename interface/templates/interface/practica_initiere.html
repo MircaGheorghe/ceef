@@ -1,0 +1,248 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  {% load static %}
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>CEEF#3 Traseul profesional</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
+  <meta name="author" content="" />
+
+  <!-- Facebook and Twitter integration -->
+  <meta property="og:title" content="" />
+  <meta property="og:image" content="" />
+  <meta property="og:url" content="" />
+  <meta property="og:site_name" content="" />
+  <meta property="og:description" content="" />
+  <meta name="twitter:title" content="" />
+  <meta name="twitter:image" content="" />
+  <meta name="twitter:url" content="" />
+  <meta name="twitter:card" content="" />
+
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,800" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700" rel="stylesheet">
+
+  <!-- Animate.css -->
+  <link rel="stylesheet" type="text/css" href="{% static 'interface/css/animate.css' %}">
+  <!-- Icomoon Icon Fonts-->
+  <link rel="stylesheet" type="text/css" href="{% static 'interface/css/icomoon.css' %}">
+  <!-- Bootstrap  -->
+  <link rel="stylesheet" type="text/css" href="{% static 'interface/css/bootstrap.css' %}">
+
+  <!-- Magnific Popup -->
+  <link rel="stylesheet" type="text/css" href="{% static 'interface/css/magnific-popup.css' %}">
+
+  <!-- Flexslider  -->
+  <link rel="stylesheet" type="text/css" href="{% static 'interface/css/flexslider.css' %}">
+
+  <!-- Owl Carousel -->
+  <link rel="stylesheet" type="text/css" href="{% static 'interface/css/owl.carousel.min.css' %}">
+  <link rel="stylesheet" type="text/css" href="{% static 'interface/css/owl.theme.default.min.css' %}">
+
+  <!-- Flaticons  -->
+  <link rel="stylesheet"  href="{% static 'interface/fonts/flaticon/font/flaticon.css' %}">
+
+  <!-- Theme style  -->
+  <link rel="stylesheet" type="text/css" href="{% static 'interface/css/style.css' %}">
+
+  <!-- Modernizr JS -->
+  <script type="text/javascript" src="{% static 'interface/js/modernizr-2.6.2.min.js' %}"></script>
+    <!-- FOR IE9 below -->
+    <!--[if lt IE 9]>
+	<script src="js/respond.min.js"></script>
+	<![endif]-->
+
+</head>
+
+<body>
+
+    <div class="colorlib-loader"></div>
+
+    <div id="page">
+        <nav class="colorlib-nav" role="navigation">
+            <div class="upper-menu">
+                <div class="container">
+                    <div class="row search_menu">
+                        <div class="col-xs-6">
+                            <div class="follow-us">
+                              {% include 'interface/first_menu.html' %}
+                            </div>
+                        </div>
+                        <div class="col-xs-6 col-md-push-2 text-right">
+                            <div class="md-form active-pink active-pink-2 mb-3 mt-0">
+                                <input class="form-control" type="text" placeholder="Search" aria-label="Search" style="
+    height: 30px;
+    background: #1E2022;
+    border: 0px;
+">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="top-menu">
+                <div class="container">
+                    <div class="row menu1_1">
+                        <div class="col-md-2">
+                            <div id="colorlib-logo">
+                              <a href="{% url 'home' %}"><img src="{% static 'interface/images/cfbc_logo2.png' %}" alt="My image" style="width: auto;height: 55px;"></a>
+                            </div>
+                        </div>
+                        <div class="col-md-10 text-right menu-1">
+                          {% include 'interface/second_menu.html' %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <aside id="colorlib-hero">
+            <div class="flexslider">
+                <ul class="slides">
+                    <li style="background-image: url(static/interface/images/img_bg_2.jpg);">
+                        <div class="overlay"></div>
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-md-6 col-sm-12 col-md-offset-3 slider-text">
+                                    <div class="slider-text-inner text-center">
+                                        <h1>Practica de inițiere în specialitate</h1>
+                                        <h2><span><a href="{% url 'home' %}">Acasă</a> | <a href="{% url 'practica' %}">Practica</a> | Practica de inițiere în specialitate</span></h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </aside>
+
+        <div id="colorlib-about" class="colorlib-light">
+            <div class="container">
+                <div class="row row-pb-md">
+                    <div class="col-md-10 col-md-offset-1 text-center animate-box">
+                        <div class="about-wrap">
+                            <div class="heading-2">
+                                <h2>Ceva acolo de scris</h2>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque porro iure iste, impedit at repellat neque non fugit architecto, voluptates nihil error sapiente similique veniam ad illum beatae rem necessitatibus!</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque quibusdam quisquam delectus a ex illum reprehenderit iusto veritatis! Libero eius, ipsa reprehenderit ipsum animi ipsam molestias quas vitae illo officia accusamus sed neque. Vel repellat quo cupiditate illum enim architecto, provident eveniet fugiat molestias vitae? Mollitia ad itaque ullam sint.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="colorlib-about" class="colorlib-light-grey">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 animate-box">
+                        <img class="classes-img-about" src="static/interface/images/fff.png" alt="" style=" border-radius: 10px; width: 100%; -webkit-box-shadow: 0px 5px 24px -8px rgba(0, 0, 0, 0.75); -moz-box-shadow: 0px 5px 24px -8px rgba(0, 0, 0, 0.75); box-shadow: 0px 5px 24px -8px rgba(0, 0, 0, 0.75);">
+                    </div>
+                    <div class="col-md-6 animate-box">
+                        <h3>Ceva acolo text</h3>
+
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum quasi, incidunt adipisci iste nobis laborum ab voluptas voluptatibus, facere quae modi atque! Eius consequatur non eum nisi suscipit quisquam quos, libero numquam aut beatae nulla doloremque corporis facere, accusamus culpa.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="colorlib-about" class="colorlib-light">
+            <div class="container">
+               <div class="text-center">
+                    <h2>Documente practica de inițiere în specialitate</h2>
+               </div>
+                <div class="table-responsive">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Denumire</th>
+                                <th>Descarcare</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, eligendi.</td>
+                                <td><a href="#"><img src="static/interface/images/download.png" alt="" style="width: 10%;"></a></td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td>2</td>
+                                <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, eligendi.</td>
+                                <td><a href="#"><img src="static/interface/images/download.png" alt="" style="width: 10%;"></a></td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td>3</td>
+                                <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, eligendi.</td>
+                                <td><a href="#"><img src="static/interface/images/download.png" alt="" style="width: 10%;"></a></td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td>4</td>
+                                <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, eligendi.</td>
+                                <td><a href="#"><img src="static/interface/images/download.png" alt="" style="width: 10%;"></a></td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td>5</td>
+                                <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, eligendi.</td>
+                                <td><a href="#"><img src="static/interface/images/download.png" alt="" style="width: 10%;"></a></td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td>6</td>
+                                <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, eligendi.</td>
+                                <td><a href="#"><img src="static/interface/images/download.png" alt="" style="width: 10%;"></a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+
+        <footer id="colorlib-footer">
+            {% include 'interface/footer.html' %}
+        </footer>
+    </div>
+
+    <div class="gototop js-top">
+        <a href="#" class="js-gotop"><i class="icon-arrow-up2"></i></a>
+    </div>
+
+    <!-- jQuery -->
+  <script type="text/javascript" src="{% static "interface/js/jquery.min.js" %}"></script>
+  <!-- jQuery Easing -->
+  <script type="text/javascript" src="{% static "interface/js/jquery.easing.1.3.js" %}"></script>
+  <!-- Bootstrap -->
+  <script type="text/javascript" src="{% static "interface/js/bootstrap.min.js" %}"></script>
+  <!-- Waypoints -->
+  <script type="text/javascript" src="{% static "interface/js/jquery.waypoints.min.js" %}"></script>
+  <!-- Stellar Parallax -->
+  <script type="text/javascript" src="{% static "interface/js/jquery.stellar.min.js" %}"></script>
+  <!-- Flexslider -->
+  <script type="text/javascript" src="{% static "interface/js/jquery.flexslider-min.js" %}"></script>
+  <!-- Owl carousel -->
+  <script type="text/javascript" src="{% static "interface/js/owl.carousel.min.js" %}"></script>
+  <!-- Magnific Popup -->
+  <script type="text/javascript" src="{% static "interface/js/jquery.magnific-popup.min.js" %}"></script>
+  <script type="text/javascript" src="{% static "interface/js/magnific-popup-options.js" %}"></script>
+  <!-- Counters -->
+  <script type="text/javascript" src="{% static "interface/js/jquery.countTo.js" %}"></script>
+  <!-- Main -->
+  <script type="text/javascript" src="{% static "interface/js/main.js" %}"></script>
+
+</body>
+
+</html>
