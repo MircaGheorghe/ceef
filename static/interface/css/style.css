@@ -8,7 +8,7 @@
 
 /* =======================================================
 *
-* 	Template Style 
+* 	Template Style
 *
 * ======================================================= */
 body {
@@ -2957,31 +2957,62 @@ form-control input[type="text"] {
     display: -webkit-inline-box;
 }
 
+.descarcare_link {
+    margin: 0px 10px;
+    height: auto;
+    background-color: #57C2F0;
+    color: white;
+    border-radius: 40px;
+    webkit-box-shadow: 0px 5px 24px -8px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 5px 24px -8px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 5px 24px -8px rgba(0, 0, 0, 0.75);
+    padding: 10px;
+    margin-bottom: 10px;
+}
 
+.descarcare_link {
+    display: flex;
+    align-items: center;
+}
 
+.descarcare_link .col-md-10 p{
+    margin: 0;
+}
 
+.descarcare_link .col-md-2 img{
+    width: 30px;
 
+    border-radius: 50%;
+    webkit-box-shadow: 0px 5px 24px -8px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 5px 24px -8px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 5px 24px -8px rgba(0, 0, 0, 0.75);
+}
 
+.descarcare_link_mare {
+    height: inherit;
+    background-color: #57C2F0;
+    color: white;
+    border-radius: 40px;
+    webkit-box-shadow: 0px 5px 24px -8px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 5px 24px -8px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 5px 24px -8px rgba(0, 0, 0, 0.75);
+    padding: 10px;
+    margin-bottom: 10px;
+}
 
+.descarcare_link_mare {
+    display: flex;
+    align-items: center;
+}
 
+.descarcare_link_mare .col-md-10 p{
+    margin: 0;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.descarcare_link_mare .col-md-2 img{
+    width: 40px;
+    border-radius: 50%;
+    webkit-box-shadow: 0px 5px 24px -8px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 5px 24px -8px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 5px 24px -8px rgba(0, 0, 0, 0.75);
+}

@@ -147,6 +147,18 @@ def conditii_admitere(request):
     'menu2' : MenuLvl2.objects.all().order_by('numarul_de_ordine')
   })
 
+def management(request):
+  return render(request, 'interface/managementul_calitatii.html', {
+    'menu1' : MenuLvl1.objects.all().order_by('numarul_de_ordine'),
+    'menu2' : MenuLvl2.objects.all().order_by('numarul_de_ordine')
+  })
+
+def formare(request):
+  return render(request, 'interface/formare_continua.html', {
+    'menu1' : MenuLvl1.objects.all().order_by('numarul_de_ordine'),
+    'menu2' : MenuLvl2.objects.all().order_by('numarul_de_ordine')
+  })
+
 def error_404(request, exception):
   data = {}
   return render(request,'interface/404.html', data)

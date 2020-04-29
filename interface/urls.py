@@ -31,4 +31,8 @@ urlpatterns = [
   path('Condiții_de_admitere', views.conditii_admitere, name="conditii_admitere"),
   path('Comisia_de_admitere', views.comisia, name="comisia_de_admitere"),
   path('Rezultatele_admiterii', views.rez_adm, name="rezultatele_admiterii"),
+
+  path('Managementul_calității', views.management, name="management"),
+
+  path('Formare_continuă', views.formare, name="formare_continua"),
 ]
