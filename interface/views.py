@@ -6,7 +6,9 @@ from interface.models import *
 def index(request):
   return render(request, 'interface/index.html', {
     'menu1' : MenuLvl1.objects.all().order_by('numarul_de_ordine'),
-    'menu2' : MenuLvl2.objects.all().order_by('numarul_de_ordine')
+    'menu2' : MenuLvl2.objects.all().order_by('numarul_de_ordine'),
+    'top_menu' : Top_menu.objects.all().order_by('numarul_de_ordine'),
+    'current_user' : request.user
   })
 
 def despre(request):
@@ -157,6 +159,25 @@ def formare(request):
   return render(request, 'interface/formare_continua.html', {
     'menu1' : MenuLvl1.objects.all().order_by('numarul_de_ordine'),
     'menu2' : MenuLvl2.objects.all().order_by('numarul_de_ordine')
+  })
+
+def cercuri(request):
+  return render(request, 'interface/cercuri.html', {
+    'menu1' : MenuLvl1.objects.all().order_by('numarul_de_ordine'),
+    'menu2' : MenuLvl2.objects.all().order_by('numarul_de_ordine')
+  })
+
+def firma_exercitiu(request):
+  return render(request, 'interface/firma_exercitiu.html', {
+    'menu1' : MenuLvl1.objects.all().order_by('numarul_de_ordine'),
+    'menu2' : MenuLvl2.objects.all().order_by('numarul_de_ordine')
+  })
+
+def avize(request):
+  return render(request, 'interface/avize.html', {
+    'menu1' : MenuLvl1.objects.all().order_by('numarul_de_ordine'),
+    'menu2' : MenuLvl2.objects.all().order_by('numarul_de_ordine'),
+    'posts' : Posts.objects.all()
   })
 
 def error_404(request, exception):

@@ -9,6 +9,8 @@ urlpatterns = [
   path('Specialități', views.specialitati, name="specials"),
   path('Catedre', views.catedre, name="catedre"),
   path('Proiecte', views.proiecte, name="rezultatele_admiterii"),
+  path('Cercuri', views.cercuri, name="cercuri"),
+  path('Firma_de_exercițiu', views.firma_exercitiu, name="firma_exercitiu"),
 
   path('Practica', views.practica, name="practica"),
   path('Informații_generale', views.info, name="informatii"),
@@ -26,11 +28,12 @@ urlpatterns = [
   path('Absolvenți', views.absolventi, name="absolventi"),
   path('Consiliul_elevilor', views.consiliu, name="consiliu"),
 
-
   path('Admitere', views.admitere, name="admitere"),
   path('Condiții_de_admitere', views.conditii_admitere, name="conditii_admitere"),
   path('Comisia_de_admitere', views.comisia, name="comisia_de_admitere"),
   path('Rezultatele_admiterii', views.rez_adm, name="rezultatele_admiterii"),
+
+  path('Avize', views.avize, name="avize"),
 
   path('Managementul_calității', views.management, name="management"),
 

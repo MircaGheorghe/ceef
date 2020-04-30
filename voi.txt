@@ -1,1 +1,3 @@
-voiam sa fac pagina 404 si la educatie nu am terminat
+La educatie nu am terminat cu toate sublincurile
+Este o problema cu css ca nu se ia in calcul
+Ultimile doua pagina de asemnea nu-s bune

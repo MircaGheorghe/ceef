@@ -1,4 +1,4 @@
-<a href="#" style="border-left: 1px solid gray"><span>Orar</span></a>
-<a href="#"><span>eLibrary</span></a>
-<a href="#"><span class="el">eLearning</span></a>
-<a href="#"><span class="co">Contacte</span></a>
+{{ current_user }}
+{% for item in top_menu %}
+  <a style="border-left: 1px solid gray" href='{{item.item_title}}'><span>{{ item.item_title }}</span></a>
+{% endfor %}
