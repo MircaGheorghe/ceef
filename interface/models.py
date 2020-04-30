@@ -81,4 +81,18 @@ class Posts(models.Model):
     verbose_name = "Postare"
     verbose_name_plural = "Păstări"
 
+class Comment(models.Model):
+  post = models.ForeignKey(Posts, on_delete=models.CASCADE)
+  author = models.CharField('Autorul', max_length=30)
+  body = models.TextField('Descrierea')
+  email = models.CharField('Email', max_length=100)
+  pub_date = models.DateTimeField('Data publicarii', auto_now_add=True)
+
+  def __str__(self):
+    return self.author
+
+  class Meta:
+    verbose_name = "Comentariu"
+    verbose_name_plural = "Comentarii"
+
 

@@ -1091,18 +1091,10 @@ figure {
     display: inline-block;
 }
 
-.review .desc .star .reply {
-    padding: 2px 10px;
-    background: #f0f0f0;
-    -webkit-border-radius: 2px;
-    -moz-border-radius: 2px;
-    -ms-border-radius: 2px;
-    border-radius: 2px;
-}
-
-.review .desc .star .reply i {
-    color: gray;
-    font-size: 12px;
+.review .desc .star .peste_like {
+    width: 100px;
+    height: 10px;
+    background-color: gray;
 }
 
 .side {
@@ -3020,4 +3012,20 @@ form-control input[type="text"] {
     webkit-box-shadow: 0px 5px 24px -8px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 0px 5px 24px -8px rgba(0, 0, 0, 0.75);
     box-shadow: 0px 5px 24px -8px rgba(0, 0, 0, 0.75);
+}
+
+.coment_button{
+  float: right;
+}
+
+.sagetele{
+  transition: all .3s;
+}
+.coment_button:hover .sagetele{
+  margin-left: 3px;
+}
+
+.tags{
+  border: 0px;
+  background-color: transparent;
 }

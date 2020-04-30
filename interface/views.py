@@ -1,6 +1,7 @@
-from django.http import HttpResponse, HttpResponseNotFound
+from django.http import HttpResponse, HttpResponseNotFound, HttpResponseRedirect
 from django.shortcuts import render
 from django.template import RequestContext
+from django.urls import reverse
 from interface.models import *
 
 def index(request):
@@ -180,6 +181,31 @@ def avize(request):
     'posts' : Posts.objects.all(),
     'tags' : Tags.objects.all(),
   })
+
+def aviz(request, post_id):
+  try:
+    a = Posts.objects.get( id = post_id )
+  except:
+    return render(request, 'interface/404.html')
+
+  comments = a.comment_set.order_by('-id')
+
+  return render(request, 'interface/aviz.html', {
+    'menu1' : MenuLvl1.objects.all().order_by('numarul_de_ordine'),
+    'menu2' : MenuLvl2.objects.all().order_by('numarul_de_ordine'),
+    'post' : a,
+    'comments': comments
+  })
+
+def leave_comment(request, post_id):
+  try:
+    a = Posts.objects.get( id = post_id )
+  except:
+    return render(request, 'interface/404.html')
+
+  a.comment_set.create(author = request.POST['name'], body = request.POST['message'], email = request.POST['email'])
+
+  return HttpResponseRedirect( reverse('aviz', args = (a.id,)) )
 
 def error_404(request, exception):
   data = {}

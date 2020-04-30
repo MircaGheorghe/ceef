@@ -34,6 +34,8 @@ urlpatterns = [
   path('Rezultatele_admiterii', views.rez_adm, name="rezultatele_admiterii"),
 
   path('Avize', views.avize, name="avize"),
+  path('Aviz/<int:post_id>/', views.aviz, name="aviz"),
+  path('Aviz/<int:post_id>/leave_comment/', views.leave_comment, name="leave_comment"),
 
   path('Managementul_calității', views.management, name="management"),
 

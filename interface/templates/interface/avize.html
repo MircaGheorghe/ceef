@@ -152,15 +152,16 @@
                     Taguri:
                     <!--<span class="closebtn" onclick="this.parentElement.style.display='none'">&times;</span>-->
                   </div>
-                  {% for pos in post.tags.all %}
+                  {% for tag in post.tags.all %}
                   <a href="#">
                     <div class="chip">
-                      {{pos}}
+                      {{tag}}
                       <!--<span class="closebtn" onclick="this.parentElement.style.display='none'">&times;</span>-->
                     </div>
                   </a>
                   {% endfor %}
                 </div>
+                <a href="{% url 'aviz' post.id %}"  class="coment_button">Comentarii <span class="sagetele">>></span></a>
               </div>
             </div>
             {% endfor %}
