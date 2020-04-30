@@ -113,43 +113,12 @@
         <div class="row" style=" border-bottom: 1px solid #e6e6e6; padding-bottom: 20px; margin-bottom: 10px;">
           <div class="col-md-12">
             <div class="scrollmenu" id="style-5">
-              <a href="#" class="href_tags" style="padding: 0px;">
+              {% for tag in tags %}
                 <div class="chip">
-                  <a href="#" class="href_tags" style="padding: 0px;">COVID-19</a>
-                  <!--<span class="closebtn" onclick="this.parentElement.style.display='none'">&times;</span>-->
+                  {{tag.tag_title}}
+                  <!-- <span class="closebtn" onclick="this.parentElement.style.display='none'">&times;</span> -->
                 </div>
-
-                <div class="chip">
-                  BAC
-                  <!--<span class="closebtn" onclick="this.parentElement.style.display='none'">&times;</span>-->
-                </div>
-
-                <div class="chip">
-                  COVID-19
-                  <!--<span class="closebtn" onclick="this.parentElement.style.display='none'">&times;</span>-->
-                </div>
-                <div class="chip">
-                  BAC
-                  <!--<span class="closebtn" onclick="this.parentElement.style.display='none'">&times;</span>-->
-                </div>
-
-                <div class="chip">
-                  COVID-19
-                  <!--<span class="closebtn" onclick="this.parentElement.style.display='none'">&times;</span>-->
-                </div>
-                <div class="chip">
-                  BAC
-                  <!--<span class="closebtn" onclick="this.parentElement.style.display='none'">&times;</span>-->
-                </div>
-
-                <div class="chip">
-                  COVID-19
-                  <!--<span class="closebtn" onclick="this.parentElement.style.display='none'">&times;</span>-->
-                </div>
-                <div class="chip">
-                  BAC
-                  <!--<span class="closebtn" onclick="this.parentElement.style.display='none'">&times;</span>-->
-                </div>
+              {% endfor %}
             </div>
           </div>
         </div>
@@ -159,7 +128,7 @@
     <div id="colorlib-about" class="colorlib-light" style="padding-top: 20px;">
       <div class="container">
         <div class="row">
-          <div class="col-md-8">
+          <div class="col-md-10">
             {% for post in posts %}
             <div class="row avize">
               <div class="col-md-4 hinata">
@@ -197,24 +166,6 @@
             {% endfor %}
           </div>
 
-          <div class="col-md-4 bara-dreapta-avize">
-
-            <div class="categorii-avize">
-              <h4 class="uzumaki">Categorii</h4>
-              <a href="#">
-                <p class="sasuke">Avize<span> (10)</span></p>
-              </a>
-              <a href="#">
-                <p class="sasuke">Cazare</p>
-              </a>
-              <a href="#">
-                <p class="sasuke">Admitere</p>
-              </a>
-              <a href="">
-                <p class="sasuke">COVID-19</p>
-              </a>
-            </div>
-          </div>
         </div>
       </div>
 

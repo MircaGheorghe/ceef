@@ -2821,12 +2821,20 @@ form-control input[type="text"] {
 
 .chip {
     display: inline-block;
-    padding: 0 15px;
-    font-size: 18px;
+    padding: 1px 15px;
+    font-size: 15px;
     border-radius: 25px;
-    background-color: #57C2F0;
-    color: white;
+    background-color: rgb(193, 235, 253);
+    color: rgb(73, 73, 73);
     margin-bottom: 5px;
+    font-weight: 100;
+    border: 1px solid rgb(222, 243, 252);
+}
+
+.chip:hover{
+  border-color: rgb(0, 86, 122);
+  transition: all .3s;
+  cursor: pointer;
 }
 
 .closebtn {

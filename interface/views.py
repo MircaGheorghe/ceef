@@ -177,7 +177,8 @@ def avize(request):
   return render(request, 'interface/avize.html', {
     'menu1' : MenuLvl1.objects.all().order_by('numarul_de_ordine'),
     'menu2' : MenuLvl2.objects.all().order_by('numarul_de_ordine'),
-    'posts' : Posts.objects.all()
+    'posts' : Posts.objects.all(),
+    'tags' : Tags.objects.all(),
   })
 
 def error_404(request, exception):
